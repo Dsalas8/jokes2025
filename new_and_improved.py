@@ -14,6 +14,22 @@ jokes = {
 
 # FUNCTIONS (2+ required)
 
+
+def remove_category():
+    """Removes a category and its jokes."""
+    print("\nAvailable categories:", ", ".join(categories))
+    cat = input("Which category do you want to remove? ").lower()
+
+    if cat in categories:
+        categories.remove(cat)
+        jokes.pop(cat)
+        print(f"Category '{cat}' removed.")
+    else:
+        print("That category doesn't exist.")
+
+
+
+
 # Abstraction: a general function that can tell ANY joke category
 def tell_joke(category):
     """Prints a joke line-by-line based on the category."""
@@ -43,7 +59,6 @@ def get_valid_category():
 
 
 
-# -----------------------------
 # MAIN PROGRAM (algorithm)
 
 
