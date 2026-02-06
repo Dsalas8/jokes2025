@@ -1,11 +1,5 @@
-# Joke Game – Performance Task Version
-# Includes: lists, functions, abstraction, parameters, iteration, selection, sequencing
-
-
-# -----------------------------
-# DATA STRUCTURES
-# -----------------------------
-
+# Joke Game 
+# CHECK LIST: lists, functions, abstraction, parameters, iteration, selection, sequencing
 
 # List of categories
 categories = ["robbers", "tanks", "pencils"]
@@ -18,13 +12,7 @@ jokes = {
     "pencils": ["Knock knock...", "Broken pencil...", "Nevermind — it's pointless!"]
 }
 
-
-
-
-# -----------------------------
 # FUNCTIONS (2+ required)
-# -----------------------------
-
 
 # Abstraction: a general function that can tell ANY joke category
 def tell_joke(category):
@@ -57,7 +45,6 @@ def get_valid_category():
 
 # -----------------------------
 # MAIN PROGRAM (algorithm)
-# -----------------------------
 
 
 print("Welcome to the Joke Game!")
