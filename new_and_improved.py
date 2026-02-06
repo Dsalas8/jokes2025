@@ -15,15 +15,15 @@ jokes = {
 # FUNCTIONS (2+ required)
 
 
-def remove_category():
+def remove_category(categories,jokes):
     """Removes a category and its jokes."""
     print("\nAvailable categories:", ", ".join(categories))
-    cat = input("Which category do you want to remove? ").lower()
+    tanks = input("Which category do you want to remove? ").lower()
 
-    if cat in categories:
-        categories.remove(cat)
-        jokes.pop(cat)
-        print(f"Category '{cat}' removed.")
+    if tanks in categories:
+        categories.remove(tanks)
+        jokes.pop(tanks)
+        print(f"Category '{tanks}' removed.")
     else:
         print("That category doesn't exist.")
 
